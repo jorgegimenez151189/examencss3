@@ -1,5 +1,6 @@
 body{
 	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
 }
 
 header {
@@ -7,6 +8,7 @@ header {
 	margin-bottom: 1vh;
 	border-radius: 10px 10px 0px 0px;
 	background-color: #5b7989;
+	margin: auto;
 }
 
 header h1 {
@@ -29,6 +31,7 @@ header h1 {
 	text-align: center;
 	background: #82c3a6;
 	border-radius: 1px;
+	margin: auto;
 
 }
 
@@ -36,6 +39,7 @@ header h1 {
 	display: flex;
 	flex-direction: row;
 	background: #d5c75f;
+	margin: auto;
 
 }
 
@@ -96,6 +100,7 @@ header h1 {
 footer{
 	border-radius: 0px 0px 10px 10px;
 	background-color: #C6d5c5;
+	margin: auto;
 }
 
 .pie {
@@ -104,6 +109,7 @@ footer{
   	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
+	margin: auto;
 }
 
 p{
@@ -156,10 +162,13 @@ h2{
 }
 
 @media (max-width: 900px){
-	.content{
+	.galeria{
 		display: flex;
 		flex-direction: column;
 		width: 100%
+	}
+	#menu-principal{
+	text-align: center;
 	}
 }
 
@@ -170,31 +179,20 @@ footer {
 	margin-top: 10px;
 	padding-top: 10px;
 	text-align: center;
+	margin: auto;
 }
 
-.content {
-	display: flex;
-	flex-direction: row;
-	background: #82c3a6;
-}
 
 img{
 	border: 2px solid white;
 	width: 200px;
 }
 
-.content > div {
-	text-align: center;
-	padding: 10px;
-	margin: 10px;
-	width: 50%;
-	background: #82c3a6;
-}
+
 
 #img1 {
 	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
-	filter: blur(10px);
-	
+	filter: blur(10px);	
 }
 
 #img2 {
@@ -217,9 +215,32 @@ img{
 	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 }
 
-#contedido-paisaje {
-	display: flex;
-	flex-direction: column;
 
 
+.foto{
+  width: 33.3%;
+}
+.galeria{
+  background-color: #82c3a6;
+  width: 100%;
+  box-sizing: border-box;
+	float:left;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 50%;
+	padding: 2%;
+	text-align: center;
+}
+article.foto:nth-child(even){
+  -webkit-filter: grayscale(100%);
+}
+article.foto:nth-child(1){
+  -webkit-filter: blur(10px);
+}
+article.foto:nth-child(3){
+  -webkit-filter: sepia(90%);
 }
